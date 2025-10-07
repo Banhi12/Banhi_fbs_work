@@ -1,17 +1,16 @@
-#include <stdio.h>
-
-int main() {
-    int a, b, c, d, e, tot;
-    float per;
-
-    printf("Enter marks (out of 100) for Geography, Science, Math, History, and English:\n");
-    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
-
-    tot = a + b + c + d + e;
-    per = (tot / 500.0) * 100;  // Use 500.0 to get float division
-
-    printf("The total marks are %d and percentage is %.2f%%\n", tot, per);
-
-    return 0;
+#include<stdio.h>
+void main(){
+	int m;
+	printf("Enter the mark:");
+	scanf("%d",&m);
+	if(m>=75)
+	    printf("%d is distinction.",m);
+	else if(m>=65)
+	    printf("%d is first class.",m);
+	else if(m>=55)
+	    printf("%d is second class.",m);
+	else if(m>=40)
+	    printf("%d is pass class.",m);
+	else if(m<40)
+	    printf("%d is fail.",m);
 }
-
